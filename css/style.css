@@ -25,31 +25,40 @@ article, aside, details, figcaption, figure, footer, header, main, nav, section,
   bottom: 0;
   left: 0;
   right: 0;
+}
 
+.catlogo {
+	max-width: 250px;
+	width: 90%;
+	margin: 10px auto;
+	display: block;
 }
 
 header {
-  font: bold 25px/3.3em 'Mali', cursive;
+  font: bold 1.5625rem/3.3em 'Mali', cursive;
   text-align: center;
   color: mediumorchid;
   background-color: white;
-  width: 470px;
+  max-width: 470px;
+	width: 90%;
   margin: 0 auto;
   border-radius: 7px;
 }
 
 h1 {
   text-decoration: underline;
+	margin: 20px 1%;
 }
 
 .intro {
-  width: 700px;
+  max-width: 700px;
+	width: 85%;
   margin: 0 auto;
-  padding: 10px 20px;
+  padding: 10px 2%;
   border: 5px double darkgreen;
   border-radius: 20px;
   background-color: aliceblue;
-  font: 16px/1.5em 'openserif', serif;
+  font: 1rem/1.5em 'poppins', sans-serif;
   color: midnightblue;
   letter-spacing: .05em;
 }
@@ -57,8 +66,9 @@ h1 {
 blockquote {
   font-style: oblique;
   position: relative;
-  left: 50px;
+  left: 5%;
   bottom: 10px;
+	padding: 10px 5% 0px 0px
 }
 
 h2 {
@@ -73,25 +83,27 @@ h2 {
 .cats {
   display: inline-block;
   vertical-align: top;
-  width: 500px;
-  margin: 10px;
-  padding: 10px 20px;
+  max-width: 500px;
+	width: 90%;
+  margin: 10px 1%;
+  padding: 10px 2%;
   border: 5px double darkgreen;
   border-radius: 20px;
   background-color: aliceblue;
-  font: 16px/1.5em 'openserif', serif;
+  font: 1rem/1.5em 'poppins', sans-serif;
   color: midnightblue;
   letter-spacing: .05em;
 }
 
 p {
   text-align: left;
+	padding: 10px 3%;
 }
 
 .catphoto {
-  float: right;
-  width: 300px;
-  padding: 20px;
+  max-width: 300px;
+	width: 90%;
+  padding: 20px 3%;
   filter: blur(1px) grayscale(100%);
   transition: .5s;
 }
@@ -122,12 +134,13 @@ p {
 }
 
 .end {
-  font: bold 20px/150% 'Mali', cursive;
+  font: bold 1.25rem/150% 'Mali', cursive;
   color: mediumorchid;
   background-color: white;
-  width: 600px;
+  max-width: 600px;
+	width: 90%;
   margin: 0 auto;
-  padding: 5px 15px;
+  padding: 5px 1%;
   border-radius: 7px;
 }
 
@@ -135,6 +148,14 @@ p {
   display: inline;
 }
 
+/*****************600 MEDIA QUERY*********************************/
+@media (min-width: 600px) {
+	.catphoto {
+		float: right;
+	}
+}
+
+/*************END 600 MEDIA QUERY*********************************/
 
 @keyframes catchaseyarn {
   from {
