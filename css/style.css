@@ -169,7 +169,81 @@ p {
   letter-spacing: 1px;
 }
 
-/*******************END HOME PAGE*******************************/
+/*******************END HOME PAGE******************************/
+
+
+/*********************CATS PAGES*******************************/
+
+.details {
+	display: flex;
+	flex-direction: column;
+}
+
+.subdetail {
+	flex: 1;
+}
+
+.image-grid {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+figure {
+	width: 100%;
+	align-self: center;
+	padding: 5px 1%;
+}
+
+figure img {
+	max-width: 100%;
+}
+
+.subcats-all {
+  text-align: center;
+}
+
+.subcats {
+  display: inline-block;
+  vertical-align: top;
+  max-width: 800px;
+	width: 90%;
+  margin: 10px 1%;
+  padding: 10px 2%;
+  border: 5px double darkgreen;
+  border-radius: 20px;
+  background-color: aliceblue;
+  font: 1rem/1.5em 'poppins', sans-serif;
+  color: midnightblue;
+  letter-spacing: .05em;
+}
+
+.button1 {
+	display: inline-block;
+	padding: 0.35em 1.2em;
+	border: 0.1em solid darkgreen;
+	margin: 0 0.3em 1.5em 0;
+	border-radius: 10px;
+	box-sizing: border-box;
+	color: mediumorchid;
+	text-align: center;
+	transition: all 0.2s;
+	text-decoration: none;
+	font-size: .9rem;
+}
+
+.button1:hover {
+	color: mediumorchid;
+	background-color: lightgrey;
+}
+
+@media all and (max-width:30em){
+ .button1{
+  display:block;
+  margin:0.4em auto;
+ }
+}
+/********************END BENGAL PAGE***********************/
 
 
 
@@ -311,11 +385,30 @@ p {
 	.catphoto {
 		float: right;
 	}
+
+figure {
+		width: 48%;
+  	padding: 10px 1%;
+	}
+}
+/*************END 615 MEDIA QUERY*********************************/
+
+
+@media (min-width: 700px) {
+
+	.details {
+		flex-direction: row;
+}
+
+@media (min-width: 900px) {
+	figure {
+		width: 29%;
+  	padding: 10px 1%;
+	}
+
 }
 
 
-
-/*************END 615 MEDIA QUERY*********************************/
 
 @keyframes catchaseyarn {
   from {
