@@ -5,26 +5,86 @@
 
     <meta charset="utf-8" />
 
-    <link href="https://fonts.googleapis.com/css?family=Mali|Poppins" rel="stylesheet">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
+    <link href="https://fonts.googleapis.com/css?family=Carter+One|Poppins" rel="stylesheet">
 
     <link href="css/style.css" type="text/css" rel="stylesheet" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!--[if lt IE 9]>
+			<script src="js/html5shiv-printshiv.min.js"></script>
+		<![endif]-->
 
   </head>
 
   <body>
     <div id="background"></div>
+    <img class="yarn" src="images/yarn.png" alt="yarn ball" title="yarn ball" />
+    <img class="cat-chase" src="images/cat-cartoon.png" alt="cat chasing yarn" title="cat chasing yarn" />
+    <button class="hamburger">&#9776;</button>
+		<button class="cross">&#735;</button>
+
     <header>
+      <nav class="menu">
+				<ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="bengal.html">Bengal</a></li>
+          <li><a href="russianblue.html">Russian Blue</a></li>
+          <li><a href="sphynx.html">Sphynx</a></li>
+				</ul>
+			</nav>
+
+      <div class= "header-nav">
+        <a href="index.html"><img class="catlogo" src="images/catlogom.png" alt="meow logo" title="meow logo" /></a>
+        <nav class="desktop-menu">
+  				<ul class="snip1198">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="bengal.html">Bengal</a></li>
+            <li class="current"><a href="russianblue.html">Russian Blue</a></li>
+            <li><a href="sphynx.html">Sphynx</a></li>
+  				</ul>
+  			</nav>
+      </div>
+
       <h1>The Russian Blue Cat</h1>
     </header>
 
     <main>
+      <div class=intro>
+        <blockquote> “Cats have it all — admiration, an endless sleep, and company only when they want it.” —Rod McKuen</blockquote>
+        <p>Cats are great. I'm not saying that dogs are not. I love most pets. MOST. I'm looking at you hermit crab who pinched me in the middle of my hand when I was nine. I will never forget that pain.</p>
+        <p>Below are my three favorite cats of all time. While I could happily home any cat, these are at the top of my list.</p>
+      </div>
+      <section class="cats-all">
+        <article class="cats">
+          <h2>Bengal</h2>
+          <a href="bengal.html"><img class="catphoto" src="images/bengal2.jpg" alt="bengal cat" title="cute bengal cat"/></a>
+          <p>Words cannot express my love for the Bengal cat. These cats are so playful and wonderful. They can jump and leap across the room in one fell swoop. These cats love to be active and run around the house all day. Their hair is short and sports the same look as their exotic large cat counterparts. They are quick, agile, and ready for adventure. These cats are incredibly intelligent and act similar to dogs in their personality. Bonus: the Russian Blue is now bred as hypoallergenic. This makes it the perfect pet for me because sadly...<span id="allergic">I am allergic to cats!</span>
+        </article>
 
+        <article class="cats">
+          <h2>Russian Blue</h2>
+          <a href="russianblue.html"><img class="catphoto" src="images/russianblue.jpg" alt="russian blue cat" title="russian blue cat on basket"/></a>
+          <p>The Russian Blue is quite possibly my favorite of all cats. It is simply beautiful. Their soft grey fur mixed with the piercing blue-green eyes are phenomenal. This cat requires love, regular grooming, and a cool temperature. The Russian Blue cat is also bred hypoallergenic, making it another ideal pet for me.</p>
+        </article>
 
+        <article class="cats">
+          <h2>Sphynx</h2>
+          <a href="sphynx.html"><img class="catphoto" src="images/sphynx.jpg" alt="sphynx cat" title="spotted sphynx cat"/></a>
+          <p>If I ever get a Sphynx cat I will name it Smeagle. These cats are adorable little monsters and I love them terribly. While they produce little to no dander and would thus prove the perfect pet for my allergy prone life, they are quite cumbersome to care for. These cats need constant grooming, washing, and care as they have no hair to displace the oil buildup that their bodies produce. Also due to the lack of hair, they need a warm environment. I can already imagine the fantastic outfits I would get for little Smeagle. These cats are quite rare though, and very expensive. The price of purchasing and upkeeping this cat will probably keep it only as a pipe dream and amazing pinterest board...</p>
+        </article>
+      </div>
       <footer class="end">
-        <p class="final">So there you have it, my three favorite cats.</p>
-        <p class="final">If you ever need a cat-sitter, I'm your girl!</p>
+        <p class="final">“In ancient times cats were worshipped as gods; they have not forgotten this.”</p>
+        <p class="final">― Terry Pratchett</p>
       </footer>
     </main>
-
+    <script src="js/hamburger.js"></script>
+		<script src="js/imageslider.js"></script>
   </body>
 </html>
