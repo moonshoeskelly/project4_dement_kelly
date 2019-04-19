@@ -94,7 +94,6 @@ h1 {
 }
 
 /**********************HOME PAGE*******************************/
-
 .intro {
   max-width: 700px;
 	width: 85%;
@@ -166,6 +165,7 @@ p {
 /*******************END HOME PAGE******************************/
 
 
+
 /*********************CATS PAGES*******************************/
 
 .bengalh1 {
@@ -235,11 +235,11 @@ figure img {
 	background-color: lightgrey;
 }
 
-@media all and (max-width:30em){
- .button1{
-  display:block;
-  margin:0.4em auto;
- }
+@media all and (max-width:30em) {
+	.button1 {
+		display:block;
+		margin:0.4em auto;
+	}
 }
 /********************END BENGAL PAGE***********************/
 
@@ -392,22 +392,31 @@ figure {
 /*************END 615 MEDIA QUERY*********************************/
 
 
+
+/*****************700 MEDIA QUERY*********************************/
 @media (min-width: 700px) {
 
 	.details {
 		flex-direction: row;
+	}
 }
 
+/****************END 700 MEDIA QUERY******************************/
+
+
+
+/********************900 MEDIA QUERY******************************/
 @media (min-width: 900px) {
 	figure {
 		width: 29%;
   	padding: 10px 1%;
 	}
-
 }
+/****************END 900 MEDIA QUERY******************************/
 
 
 
+/**********************CSS ANIMATIONS*****************************/
 @keyframes catchaseyarn {
   from {
     transform: translateX(800px);
@@ -425,3 +434,4 @@ figure {
     transform: translateX(-2500px);
   }
 }
+/*******************END CSS ANIMATIONS*****************************/
