@@ -13,12 +13,6 @@ font-family: 'Poppins', sans-serif;
 font-family: 'Carter One', cursive;
 **/
 
-@font-face {
-  font-family:'openserif';
-  src: url('../fonts/openserif.ttf')
-  format('truetype');
-}
-
 #background {
   background: gray url("../images/kittens1.jpg") repeat;
   filter: grayscale(50%);
