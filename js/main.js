@@ -1,3 +1,14 @@
+//Smooth Scroll to Bengals from h1
+
+$(document).ready(function() {
+    $('a[href*=\\#]').on('click', function(e){
+        e.preventDefault();
+        $('html, body').animate({
+            scrollTop : $(this.hash).offset().top
+        }, 1000);
+    });
+});
+
 //Image Randomizer
 
 var rand_int = Math.floor(Math.random() * 5);
@@ -10,6 +21,6 @@ var r_image = [
   "images/blue6.jpg"
 ],
 
-	im = document.getElementById("bluerand");
+im = document.getElementById("bluerand");
 
 im.src = r_image[rand_int];

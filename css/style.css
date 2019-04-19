@@ -168,6 +168,10 @@ p {
 
 /*********************CATS PAGES*******************************/
 
+.bengalh1 {
+	text-decoration: none;
+}
+
 .details {
 	display: flex;
 	flex-direction: column;
